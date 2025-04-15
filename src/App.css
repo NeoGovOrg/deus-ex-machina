@@ -1,0 +1,38 @@
+div.App{
+    width: 1440px;
+    height: 100%;
+    padding: 50px 100px;
+
+    position: relative;
+
+    z-index: 0;
+}
+
+.logo-underlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/NeoLogo-preta.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 1000px;
+    
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.Conteudo{
+    padding: 40px 50px;
+}
+
+span.neo{
+    font-style: italic !important;
+}
+
+span.neo::after{
+    content: "™";
+}

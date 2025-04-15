@@ -1,0 +1,8 @@
+span{
+    font: var(--texto1);
+}
+
+.title{
+    font-family: var(--fonte1);
+    font-weight: 600;
+}

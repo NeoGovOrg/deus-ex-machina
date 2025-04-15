@@ -1,0 +1,43 @@
+:root {
+    --preto: black;
+    --cinza-escuro: rgb(195, 190, 190);
+    --cinza-claro: rgb(230, 225, 225);
+    --branco: white;
+
+    --fonte1: "Century Schoolbook" , Century , Serif;
+    --fonte2: "Helvetica" , "Arial" ,  sans-serif;
+
+    --titulo1: 40px bold , var(--fonte1);
+    --titulo2: 36px bold , var(--fonte1);
+    --texto1: 24px regular , var(--fonte2);
+}
+
+*{
+    margin: 0;
+    font-family: var(--fonte2);
+}
+
+body{
+    background-color: var(--branco);
+    box-sizing: border-box;
+    min-width: fit-content;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.titulo1{
+    color: var(--preto);
+    font: var(--titulo1);
+}
+
+.titulo2{
+    color: var(--preto);
+    font: var(--titulo2);
+}
+
+.texto1{
+    color: var(--preto);
+    font: var(--texto1);
+}
