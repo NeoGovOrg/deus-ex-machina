@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import styles from "./Login.module.css"
+import Acordeao from "../../components/Acordeao/Acordeao"
 
 const Login = () => {
     const navigate = useNavigate()
@@ -32,6 +33,8 @@ const Login = () => {
                     enviar
                 </button>
             </form>
+            <Acordeao></Acordeao>
+            <Acordeao></Acordeao>
         </div>
     )
 }

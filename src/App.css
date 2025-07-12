@@ -27,6 +27,9 @@ div.App{
 
 .Conteudo{
     padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 span.neo{

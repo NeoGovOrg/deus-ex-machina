@@ -1,4 +1,12 @@
-.pageTitle{
-    font: var(--titulo1);
-    font-weight: 600;
+.projectInfos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardsSection{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }

@@ -1,0 +1,42 @@
+.container{
+    background-image: url("../../assets/NeoLogo-preta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--preto);
+
+    border: 1px solid currentColor;
+    border-radius: 5px;
+}
+
+    .container > *{
+        max-width: 550px;
+        text-align: center;
+    }
+
+    .topText{
+        font-size: 20px;
+    }
+
+        .topText > span{
+            font-size: 20px;
+        }
+
+    .midText{
+        margin: 10px 0;
+        font-family: var(--fonte1);
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .bottomText{
+        font-size: 15px;
+    }

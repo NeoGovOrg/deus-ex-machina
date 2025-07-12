@@ -30,6 +30,7 @@ body{
 .titulo1{
     color: var(--preto);
     font: var(--titulo1);
+    font-weight: 600;
 }
 
 .titulo2{
