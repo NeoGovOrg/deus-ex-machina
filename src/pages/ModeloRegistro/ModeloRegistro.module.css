@@ -1,0 +1,63 @@
+.container {
+    width: 950px;
+}
+
+    .nome {
+        margin: 10px 0px 50px;
+        font: var(--titulo1);
+    }
+
+    div.informacoesPessoas {
+        margin-bottom: 25px;
+
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 25px;
+    }
+
+        div.infoTexto {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+            .filiacao {
+                
+            }
+                .filiacao > ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .inTitulo {
+                    font-family: var(--fonte1);
+                    font-weight: 600;
+                }
+
+                .inTexto {
+                    font: var(--texto1);
+                }
+
+        div.infoBiometria {
+            padding: 15px;
+
+            border: 1px solid var(--cinza-escuro);
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+        }
+
+            div.infoBiometria > img {
+                width: 100%;
+            }
+
+    div.informacoesExperimento {
+        margin-top: 25px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }

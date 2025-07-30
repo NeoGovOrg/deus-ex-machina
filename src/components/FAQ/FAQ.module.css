@@ -1,0 +1,44 @@
+.container{
+    width: 800px;
+}
+
+.titulo{
+    margin-bottom: 10px;
+
+    font-size: 36px;
+    font-family: var(--fonte1);
+}
+
+.questions{
+    padding: 0px 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .card{
+        
+        cursor: pointer;
+    }
+    
+    .pergunta{
+        padding: 10px 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        border-bottom: 1px solid black;
+    }
+
+        .pergunta > h5{
+            font-size: 24px;
+            font-family: var(--fonte2);
+        }
+
+    .resposta{
+        margin: 15px;
+        font-size: 24px;
+    }
+

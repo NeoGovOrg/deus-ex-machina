@@ -2,6 +2,7 @@
     --preto: black;
     --cinza-escuro: rgb(195, 190, 190);
     --cinza-claro: rgb(230, 225, 225);
+    --amarelo: rgb(255, 165, 0);
     --branco: white;
 
     --fonte1: "Century Schoolbook" , Century , Serif;
@@ -41,4 +42,6 @@ body{
 .texto1{
     color: var(--preto);
     font: var(--texto1);
+
+    line-height: 33px;
 }

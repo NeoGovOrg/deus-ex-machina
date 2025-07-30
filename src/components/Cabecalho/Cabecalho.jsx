@@ -1,14 +1,16 @@
-import logo from "../../assets/NeoLogo-preta.png"
+import logo from "../../assets/img/NeoLogo-preta.png"
 import styles from "./Cabecalho.module.css"
 
-const Cabecalho = () => {
+const Cabecalho = ({logado , setLogado}) => {
     return(
         <header className={styles.container}>
             <div className={styles.left}>
                 <img src={logo} alt=" " />
                 <h2 className={styles.title}>Deus Ex Machina</h2>
             </div>
-            <a href="/" className={styles.exit}>sair</a>
+            { logado && (
+                <a href="/br" className={styles.exit} onClick={() => setLogado(false)}>sair</a>
+            )}
         </header>
     )
 }

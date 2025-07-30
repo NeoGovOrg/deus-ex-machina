@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.MODE === 'production' ? '/deus-ex-machina' : '/'}>
+    <BrowserRouter basename={import.meta.env.MODE === 'production' ? '/deus-ex-machina/br' : '/br'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

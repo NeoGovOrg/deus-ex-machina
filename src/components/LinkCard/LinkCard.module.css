@@ -1,6 +1,7 @@
 a.card{
     background-color: rgba(5, 5, 5, 0.03);
     width: 100%;
+    max-width: 400px;
     padding: 20px 30px;
 
     display: flex;
@@ -32,4 +33,5 @@ a.card{
 
     a.card p{
         color: currentColor;
+        padding-right: 50px;
     }

@@ -1,23 +1,23 @@
 import { useNavigate } from "react-router-dom"
 import styles from "./Login.module.css"
-import Acordeao from "../../components/Acordeao/Acordeao"
 import { useState } from "react"
 
-const Login = () => {
+const Login = ({setLogado}) => {
 
     const [inputCredencial, setInputCredencial] = useState('')
     const [inputSenha, setInputSenha] = useState('')
-    const navigate = useNavigate()
 
-    const credencial = "123"
+    const credencial = "bananilson"
     const senha = "123"
 
     function entrar() {
-        if(inputCredencial === credencial && inputSenha === senha){
-            navigate("/homepage")
+        if(inputCredencial.toLowerCase() === credencial 
+        && inputSenha.toLowerCase() === senha){
+            setLogado(true)
         }
         else{
-            alert("algo deu terrivelmente errado")
+            setLogado(false)
+            alert("Credenciais não correspondem. Certifique-se que pode consultar os dados do projeto DEUS EX MACHINA.")
         }
     }
 
