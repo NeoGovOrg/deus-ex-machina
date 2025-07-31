@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Voluntario from "./pages/Voluntario/Voluntario";
 import VoluntarioSync from "./pages/Voluntario/Sync/Sync";
+import VoluntarioNano from "./pages/Voluntario/Nano/Nano";
 import ModeloRegistro from "./pages/ModeloRegistro/ModeloRegistro";
 
 const RoutesApp = ({ logado, setLogado }) => {
@@ -15,12 +16,12 @@ const RoutesApp = ({ logado, setLogado }) => {
                 element={ logado ? <Home /> : <Login setLogado={setLogado}/>} 
             />
             <Route 
-                path='/br' 
-                element={ logado ? <Home /> : <Login setLogado={setLogado}/>} 
-            />
-            <Route 
                 path='/period/voluntary' 
                 element={ logado ? <Voluntario /> : <Login setLogado={setLogado}/>} 
+            />
+            <Route 
+                path='/period/voluntary/nano' 
+                element={ logado ? <VoluntarioNano /> : <Login setLogado={setLogado}/>} 
             />
             <Route 
                 path='/period/voluntary/sync' 

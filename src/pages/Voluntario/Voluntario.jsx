@@ -14,17 +14,24 @@ const Voluntario = () => {
 
             <div className="projectInfos">
                 <InlineTitle title="Status do Período: " text="Encerrado"/>
-                <InlineTitle title="Duração: " text="2036 à 2047"/>
+                <InlineTitle title="Duração: " text="2036 à 2037"/>
                 <InlineTitle title="Nível de Prestígio: " text="A"/>
             </div>
 
-            <p className="texto1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatibus pariatur ex eius amet doloremque. Officia eum nam nesciunt expedita. Ea laudantium ducimus, perferendis natus unde magni animi recusandae voluptas nam asperiores architecto temporibus non, pariatur nesciunt sint laboriosam cumque iste? Et, dolorem at non reiciendis sunt vitae nulla.
-            </p>
+            <div>
+                <p className="texto1">
+                    Este é o registro do Período 1 do Projeto <span className="dem">Deus Ex Machina</span>, que se estendeu de 2036 a 2037. Nesta etapa inicial, nossos esforços se concentraram em dois eixos principais: o estudo prático do potencial da nanotecnologia no organismo humano, e os experimentos feitos para melhorar os atuais implantes neurais.
+                </p>
+                <br />
+                <p className="texto1">
+                    Todos os registros de tais estudos e experimentos foram compilados a partir dos relatórios enviados pelos agentes ativos do projeto. Veja mais detalhes sobre os estudos e experimentos clicando no link respectivo abaixo.
+                </p>
+            </div>
+
             
             <div className="cardsSection">
+                <LinkCard title="Nanotecnologia" text="Primeiros testes de integração para restaurar tecido orgânico" link={'voluntary/nano'}/>
                 <LinkCard title="Sincronização" text="Testes para melhor integração de implantes." link={'voluntary/sync'} />
-                <LinkCard title="Nanotecnologia" text="Primeiros testes de integração para restaurar tecido orgânico"/>
             </div>
 
         </>

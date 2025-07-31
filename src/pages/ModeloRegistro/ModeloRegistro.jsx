@@ -35,13 +35,13 @@ const ModeloRegistro = () => {
             <div className={styles.informacoesPessoas}>
                 <div className={styles.infoTexto}>
                     <InlineTitle title='Idade: ' text={idade ? idade : '█'} />
-                    <InlineTitle title='CPF: ' text={cpf ? cpf : '█████'} />
+                    <InlineTitle title='CPF: ' text={cpf ? cpf : '███████'} />
 
                     <section className={styles.filiacao}>
                         <span className={styles.inTitulo}> Filiação: </span>
                         <ul>
-                            <li className={styles.inTexto}> {parente1 ? parente1 : '███████'}</li>
-                            <li className={styles.inTexto}> {parente2 ? parente2 : '███████'}</li>
+                            <li className={styles.inTexto}> {parente1 ? parente1 : '██████'}</li>
+                            <li className={styles.inTexto}> {parente2 ? parente2 : '█████████'}</li>
                         </ul>
                     </section>
 
@@ -56,10 +56,32 @@ const ModeloRegistro = () => {
             <hr />
 
             <div className={styles.informacoesExperimento}>
-                <InlineTitle title='Abordagem: ' text={abordagem ? abordagem : '████████████████████████████ ███████████████████'} />
-                <InlineTitle title='Resultados: ' text={resultados ? resultados : '███████████████████████ ███████████████████████'} />
+                <InlineTitle title='Abordagem: ' text={abordagem ? abordagem : '██████████████████████████████ █████████████████'} />
+                <span className={styles.inTexto}>Ao fim de cada um dos experimentos, amnésicos suficientes foram aplicados.</span>
+                <p className={styles.inTexto} style={{marginTop:'10px'}}>
+                </p>
 
-                <InlineTitle title='Procedimentos: ' text={procedimentos ? procedimentos : '█████████████████████████'} />
+                <InlineTitle title='Resultados: ' text={resultados ? resultados : '███████████████████████████████████ ███████'} />
+
+                <section className={styles.procedimentos}>
+                    <span className={styles.inTitulo}> Procedimentos: </span>
+                    { procedimentos ? (
+                        <>
+                            <span className={styles.inTexto} style={procedimentos[1] && ({textDecoration:'line-through'}) }>
+                                {procedimentos[0]}
+                            </span>
+
+                            {procedimentos[1] && (
+                                <p className={styles.inTexto} style={{marginTop:'10px'}}> 
+                                    {procedimentos[1]} 
+                                </p>
+                            )}
+                        </>
+                    ) : (
+                         <span className={styles.inTexto} > █████████████████████████ </span>
+                    )}
+
+                </section>
             </div>
         </div>
     )

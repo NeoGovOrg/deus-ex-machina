@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom"
 import logo from "../../assets/img/NeoLogo-preta.png"
 import styles from "./Cabecalho.module.css"
 
 const Cabecalho = ({logado , setLogado}) => {
     return(
         <header className={styles.container}>
-            <div className={styles.left}>
+            <Link to='/' className={styles.left}>
                 <img src={logo} alt=" " />
                 <h2 className={styles.title}>Deus Ex Machina</h2>
-            </div>
+            </Link>
             { logado && (
-                <a href="/br" className={styles.exit} onClick={() => setLogado(false)}>sair</a>
+                <a href="/" className={styles.exit} onClick={() => setLogado(false)}>sair (bananilson)</a>
             )}
         </header>
     )

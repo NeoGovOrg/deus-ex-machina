@@ -40,6 +40,13 @@ span.neo::after{
     content: "™";
 }
 
+span.dem{
+    font-family: var(--fonte1);
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
 .projectInfos{
     display: flex;
     justify-content: space-between;

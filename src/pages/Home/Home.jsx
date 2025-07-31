@@ -6,16 +6,16 @@ import FAQ from "../../components/FAQ/FAQ"
 const Home = () => {
     const faqPerguntas = [
         {
-            pergunta: 'Pergunta 1',
-            resposta: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, laborum? 1'
+            pergunta: 'Por que o site trocou tantas vezes de endereço?',
+            resposta: 'Desde que mudamos do Período 1 para o Período 2, diversas vezes a integridade do projeto foi colocada em risco. O estopim foi graças ao funcionário ████████, que agiu de má fé contra nós e a nossa organização. Os devidos cuidados estão sendo tomados. Tenham ele de exemplo.'
         },
         {
-            pergunta: 'Pergunta 2',
-            resposta: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, laborum? 2'
+            pergunta: 'Por que o nome "Deus Ex Machina"?',
+            resposta: 'Do latim “Deus que Encarna na Máquina”. Um termo teatral comumente usado quando, em uma obra, um problema aparentemente insolúvel é resolvido com uma solução inesperada.'
         },
         {
             pergunta: 'O que é ghost chroma?',
-            resposta: 'Não há com o que se preocupar.'
+            resposta: 'Para evitar comoção desnecessária, a organização e seus agentes são instruídos a assegura que Ghost Chroma é apenas um drone venezuelano inofensivo. Vocês saberão da verdade caso isso represente um risco real à nossa integridade. Por enquanto, não há com o que se preocupar.'
         },
     ]
 
@@ -32,10 +32,10 @@ const Home = () => {
             </div>
 
             <p className="texto1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatibus pariatur ex eius amet doloremque. Officia eum nam nesciunt expedita. Ea laudantium ducimus, perferendis natus unde magni animi recusandae voluptas nam asperiores architecto temporibus non, pariatur nesciunt sint laboriosam cumque iste? Et, dolorem at non reiciendis sunt vitae nulla.
+                Boas vindas ao Projeto <span className="dem">Deus Ex Machina</span>. Nosso objetivo com este projeto é usar os avanços tecnológicos recentes para elevar as capacidades humanas ao máximo. Instalações foram alocadas ao redor de diversos dos países afiliados à <span className="neo">NEO</span> para realizar os estudos e os experimentos necessários para alcançar nosso objetivo. Tais estudos usam como base sujeitos voluntariados/necessitados, que nos ajudam a fazer o mundo girar mais veloz.
             </p>
             <p className="texto1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni voluptatibus pariatur ex eius amet doloremque. Officia eum nam nesciunt expedita. Ea laudantium ducimus, perferendis natus unde magni animi recusandae voluptas nam asperiores architecto temporibus non, pariatur nesciunt sint laboriosam cumque iste? Et, dolorem at non reiciendis sunt vitae nulla.
+                O projeto foi encerrado com três períodos. Para ver mais detalhes de um período, tal como registros dos experimentos, clique no respectivo link abaixo.
             </p>
 
             <div className="cardsSection">
